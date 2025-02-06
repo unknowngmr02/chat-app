@@ -41,7 +41,10 @@ io.on('connection', (socket) => {
   });
 });
 
-const PORT = process.env.PORT || 3000;
-server.listen(PORT, () => {
-  console.log(`Server running at http://localhost:${PORT}`);
+// ✅ Use Render’s assigned PORT
+const PORT = process.env.PORT || 10000;
+
+// ✅ Bind server to `0.0.0.0` instead of `localhost`
+server.listen(PORT, '0.0.0.0', () => {
+  console.log(`Server running on port ${PORT}`);
 });
