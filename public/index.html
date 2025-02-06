@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Live Chat App</title>
+  <script src="https://cdn.socket.io/4.3.2/socket.io.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>Chat App</h2>
+
+  <input id="usernameInput" placeholder="Enter your name" />
+  <button onclick="setUsername()">Set Name</button>
+
+  <ul id="messages">
+    <li>
+        starting....
+    </li>
+  </ul>
+  <input id="messageInput" autocomplete="off" placeholder="Type a message..." />
+  <button onclick="sendMessage()">Send</button>
+
+ <script src="script.js"></script>
+</body>
+</html>
