@@ -1,5 +1,5 @@
 // Connect to WebSocket server
-const socket = io('https://chat-app-3-0zms.onrender.com'); // Make sure this matches your backend
+const socket = io('https://temp-chatting-server.onrender.com'); // Make sure this matches your backend
 
 let username = '';
 
